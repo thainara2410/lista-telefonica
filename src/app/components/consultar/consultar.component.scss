@@ -1,0 +1,29 @@
+.menu-icon {
+    font-size: 2.5rem;
+    color: gray;
+    position: relative;
+  }
+  
+  .menu-icon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1;
+    size: 0.3em;
+  }
+  
+  ion-item ion-buttons {
+    z-index: 2;
+  }
+  
+  ion-item ion-buttons ion-button {
+    display: none;
+  }
+  
+  ion-item:hover ion-buttons ion-button {
+    display: inline-block;
+  }

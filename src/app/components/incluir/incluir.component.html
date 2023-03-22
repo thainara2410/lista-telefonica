@@ -1,0 +1,22 @@
+<ion-content>
+<ion-list>
+    <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input placeholder="Digite o nome do seu contato..." [(ngModel)]="contato.nome" required></ion-input>
+    </ion-item>
+    <ion-note *ngIf="nomeVazio" slot="error" color="danger">*O campo Nome é obrigatório!</ion-note>
+
+
+    <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input type="tel" placeholder="888-888-8888" [(ngModel)]="contato.telefone" required></ion-input>
+    </ion-item>
+    <ion-note *ngIf="telefoneVazio" slot="error" color="danger">*O campo Telefone é obrigatório!</ion-note>
+
+    <ion-button *ngIf="!formEnviado" color="secondary" expand="block" (click)="enviar()">Salvar</ion-button>
+</ion-list>
+
+
+<ion-button expand="block" color="success" *ngIf="formEnviado">Formulário enviado com sucesso!</ion-button>
+
+</ion-content>
