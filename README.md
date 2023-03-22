@@ -1,0 +1,1 @@
+Lista telefônica com operações de CRUD feita o Framework Ionic 6 baseado em Angular 13 que consome uma API RESTful-Spring Boot conectada ao SGBD MySQL para armazenar e recuperar informações dos dados do aplicativo. 
